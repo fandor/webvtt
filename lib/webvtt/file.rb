@@ -66,7 +66,7 @@ private
         cue_opts[:identifier] = collected_lines.first
         cue_opts[:cue_line] = collected_lines[1]
       end
-      cue_opts[:text] = collected_lines[2..-1].join("\n")
+      cue_opts[:text] = collected_lines[2..-1].join(' ')
       cues << Cue.new(cue_opts)
     end
 
